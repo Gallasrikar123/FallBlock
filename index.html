@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlockFall</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#home">Block<span>Fall</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="game.html">Play</a>
+      <a href="#how">How to Play</a>
+      <a href="#leaderboard">Leaderboard</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page hero">
+      <div class="hero-text">
+        <p class="tag">DROP • MATCH • CLEAR • SCORE</p>
+        <h1>Block<span>Fall</span></h1>
+        <p class="subtitle">Simple rules. Endless fun.</p>
+        <p>Move, rotate and drop the blocks. Complete horizontal rows to clear them and increase your score.</p>
+        <a class="primary play-link" href="game.html">▶ Play Game</a>
+      </div>
+      <div class="hero-blocks" aria-hidden="true">
+        <div class="stack">
+          <i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i>
+          <i class="c5"></i><i class="c6"></i><i class="c7"></i><i class="c8"></i>
+          <i class="c9"></i><i class="c10"></i><i class="c11"></i><i class="c12"></i>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="page info-page">
+      <h2>How to <span>Play</span></h2>
+      <div class="steps">
+        <div><b>1</b><h3>Move</h3><p>Use ← and → to move the falling block.</p></div>
+        <div><b>2</b><h3>Rotate</h3><p>Use ↑ to rotate the block.</p></div>
+        <div><b>3</b><h3>Drop</h3><p>Use ↓ to make the block fall faster.</p></div>
+        <div><b>4</b><h3>Clear</h3><p>Fill a complete row to remove it and score points.</p></div>
+      </div>
+    </section>
+
+    <section id="leaderboard" class="page info-page">
+      <h2><span>Leaderboard</span></h2>
+      <div class="table">
+        <div class="row head"><b>#</b><b>Player</b><b>Score</b><b>Level</b></div>
+        <div class="row"><span>1</span><span>BlockMaster</span><span>1250</span><span>12</span></div>
+        <div class="row"><span>2</span><span>PixelPro</span><span>980</span><span>10</span></div>
+        <div class="row"><span>3</span><span>GameOn</span><span>760</span><span>8</span></div>
+        <div class="row"><span>4</span><span>Shadow</span><span>620</span><span>6</span></div>
+        <div class="row you"><span>5</span><span>You</span><span id="bestScore">0</span><span>1</span></div>
+      </div>
+    </section>
+
+    <section id="about" class="page info-page">
+      <h2>About <span>BlockFall</span></h2>
+      <p class="about-text">BlockFall is a simple falling-block puzzle game created as a college web project using only HTML, CSS and JavaScript.</p>
+      <div class="tech-list">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 BlockFall • College Project</footer>
+</body>
+</html>

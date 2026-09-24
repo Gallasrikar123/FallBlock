@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlockFall - Play</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">Block<span>Fall</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="game.html" class="active">Play</a>
+      <a href="index.html#how">How to Play</a>
+      <a href="index.html#leaderboard">Leaderboard</a>
+      <a href="index.html#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="game" class="page game-page">
+      <div class="section-title">
+        <div>
+          <p class="tag">GAME MODE</p>
+          <h2>Play <span>BlockFall</span></h2>
+        </div>
+        <a class="small-btn link-btn" href="index.html">← Home</a>
+      </div>
+
+      <div class="game-layout">
+        <aside class="side-panel">
+          <div class="stat"><small>Score</small><strong id="score">0</strong></div>
+          <div class="stat"><small>Level</small><strong id="level">1</strong></div>
+          <div class="stat"><small>Lines</small><strong id="lines">0</strong></div>
+          <div class="next-box">
+            <small>Next Block</small>
+            <div id="nextPreview"></div>
+          </div>
+        </aside>
+
+        <div class="board-wrap">
+          <div id="board" class="board" aria-label="BlockFall game board"></div>
+          <div id="gameMessage" class="game-message hidden">
+            <h3>Game Over</h3>
+            <p>Your score: <span id="finalScore">0</span></p>
+            <button class="primary" id="playAgain" type="button">Play Again</button>
+          </div>
+        </div>
+
+        <aside class="controls">
+          <div class="control-title">Controls</div>
+          <div class="controls-row">
+            <button type="button" data-key="ArrowLeft" aria-label="Move left">←</button>
+            <button type="button" data-key="ArrowRight" aria-label="Move right">→</button>
+            <button type="button" data-key="ArrowUp" aria-label="Rotate">↻</button>
+            <button type="button" data-key="ArrowDown" aria-label="Drop">↓</button>
+          </div>
+          <button class="wide" id="pauseBtn" type="button">Ⅱ Pause</button>
+          <button class="restart-control" id="restartBtn" type="button">↻ Restart</button>
+        </aside>
+      </div>
+
+      <p class="hint">← → Move &nbsp; • &nbsp; ↑ Rotate &nbsp; • &nbsp; ↓ Soft Drop &nbsp; • &nbsp; Space Hard Drop</p>
+    </section>
+  </main>
+
+  <footer>© 2026 BlockFall • College Project</footer>
+  <script src="script.js"></script>
+</body>
+</html>
